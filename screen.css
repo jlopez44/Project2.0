@@ -1,54 +1,94 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-/* stylelint-disable*/
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html{
+    font-size: 1.125em; /* 18px / 16px */
+    line-height:1.22em;
+    padding: 1.2em 0.75em;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, main, menu, nav, section {
-	display: block;
-}
-html {
-	line-height: 1;
-}
+
+
 body {
-  line-height: inherit;
+    background-color: #F6EACB;;
 }
-ol, ul {
-	list-style: none;
+
+h1 , h2{
+    font-size: 1.73em; /* 31.104 px */
+    line-height: 1.22em;
 }
-blockquote, q {
-	quotes: none;
+
+
+li a:hover {
+    background-color: #111;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+.active {
+    background-color: #4CAF50;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+/*
+li {
+    border-right: 1px solid #bbb;
+}
+*/
+li:last-child {
+    border-right: none;
+}
+p  {
+    color: #D83938;
+    font-family: serif;
+
+}
+img{
+    width: 75%;
+    max-height: 40%;
+    background-image: url('pic1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container{
+max-width: 30%;
+
+
+
+}
+
+
+#navigation{
+    text-align: center;
+    width: 100%;
+}
+
+#nav li{
+    display: block;
+}
+
+#nav li a {
+    display: block;
+}
+
+
+@media screen and (min-width: 300px) {
+    img{
+        
+        padding-left: 10%;
+    }
+
+    nav li {
+        width: 33.3333333%;
+        float:left;
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+}
+ul
+{
+padding-bottom: 10px;
+}
+
+figcaption
+{
+    text-align: center;
 }
